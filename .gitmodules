@@ -1,0 +1,3 @@
+[submodule "GUI"]
+	path = GUI
+	url = git@github.com:omuskywalker/CoOS-GUI-Engine.git
