@@ -6305,3 +6305,7 @@ ERROR Objecting src/widget.c failed, stop building.
 2020-02-23 20:08:00 INFO Copying main.elf success.
 2020-02-23 20:08:00 INFO Build finished without error.
 2020-02-23 20:09:18 INFO Push to remote branch 'mouse_dev' from 'gui' success.
+2020-02-23 20:11:06 INFO Push to remote branch 'mouse_dev' from 'gui' success.
+2020-02-23 20:15:12 INFO Clean everythings up.
+2020-02-23 20:15:21 INFO Clean everythings up.
+2020-02-23 20:15:21 INFO Clean every dir:obj up.

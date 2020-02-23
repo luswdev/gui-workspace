@@ -114,7 +114,7 @@ git:
 	@:
 
 clean:
-	#$(MAKE) clean -e -C System
+	$(MAKE) clean -e -C System
 	$(MAKE) clean -e -C CoOS
 	$(MAKE) clean -e -C GUI
 	$(MAKE) clean -e -C User

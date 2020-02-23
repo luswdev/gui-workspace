@@ -1,0 +1,6 @@
+*.elf
+*.lst
+*.bin
+*.log
+*/obj/
+*/*/obj/
