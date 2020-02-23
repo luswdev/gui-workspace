@@ -118,7 +118,7 @@ clean:
 	$(MAKE) clean -e -C CoOS
 	$(MAKE) clean -e -C GUI
 	$(MAKE) clean -e -C User
-	-rm -rf main.bin main.elf
+	-rm -rf main.bin main.elf main.lst
 	@echo $(NOW) INFO Clean everythings up. >> build.log
 ifdef clean_dir
 	-rm -rf */obj */*/obj
