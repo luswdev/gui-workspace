@@ -39,7 +39,7 @@ cogui_graphic_driver_t driver_ops = {
     GRAPHIC_PIXEL_FORMAT_RGB565,
     240,
     320,
-    Co_NULL,
+    LCD_FRAME_BUFFER + BUFFER_OFFSET,
     &ops,
     Co_NULL
 };
@@ -70,8 +70,6 @@ void wait_user_btn(char *s)
 #ifdef USE_GUI
 void app_a_paint()
 {
-	cogui_printf("[%10s] Paint start.\r\n", cogui_app_self()->name);
-
 	cogui_window_t *win = cogui_window_create_with_title();
 	
 	cogui_window_show(win);

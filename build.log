@@ -5714,3 +5714,594 @@ ERROR Objecting src/widget.c failed, stop building.
 2020-02-22 22:32:48 INFO Push to remote branch 'mouse_dev' from 'gui' success.
 2020-02-22 22:33:45 INFO Push to remote branch 'mouse_dev' from 'gui' success.
 2020-02-22 22:50:33 INFO Push to remote branch 'mouse_dev' from 'gui' success.
+2020-02-22 22:52:52 INFO Make new folder GUI/obj
+2020-02-22 22:52:52 INFO Objecting GUI/src/app.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/color.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/dc.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/dc_hw.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/driver.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/font.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/mouse.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/server.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/symbol.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/system.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/title.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/tm_stm32f4_fonts.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/widget.c success.
+2020-02-22 22:52:52 INFO Objecting GUI/src/window.c success.
+2020-02-22 22:52:52 INFO Copying main.elf success.
+2020-02-22 22:52:52 ERROR Flash binary into STM32 failed.
+2020-02-22 22:52:52 WARNING Trying flash binary again.
+2020-02-22 22:53:22 INFO Linking main.elf success.
+2020-02-22 22:53:22 INFO Copying main.elf success.
+2020-02-22 22:53:22 INFO Build finished without error.
+2020-02-23 14:40:46 INFO Objecting GUI/src/system.c success.
+2020-02-23 14:40:46 ERROR Linking main.elf failed, stop building.
+2020-02-23 14:41:06 INFO Objecting GUI/src/system.c success.
+2020-02-23 14:41:06 INFO Linking main.elf success.
+2020-02-23 14:41:06 INFO Copying main.elf success.
+2020-02-23 14:44:41 ERROR Objecting GUI/src/system.c failed, stop building.
+2020-02-23 14:45:03 INFO Objecting GUI/src/system.c success.
+2020-02-23 14:45:03 INFO Linking main.elf success.
+2020-02-23 14:45:03 INFO Copying main.elf success.
+2020-02-23 14:47:31 INFO Objecting GUI/src/system.c success.
+2020-02-23 14:47:31 INFO Linking main.elf success.
+2020-02-23 14:47:31 INFO Copying main.elf success.
+2020-02-23 14:48:25 INFO Objecting GUI/src/system.c success.
+2020-02-23 14:48:25 INFO Linking main.elf success.
+2020-02-23 14:48:25 INFO Copying main.elf success.
+2020-02-23 14:48:25 ERROR Flash binary into STM32 failed.
+2020-02-23 14:48:25 WARNING Trying flash binary again.
+2020-02-23 14:48:48 INFO Copying main.elf success.
+2020-02-23 14:48:48 INFO Build finished without error.
+2020-02-23 14:51:09 INFO Objecting GUI/src/system.c success.
+2020-02-23 14:51:09 INFO Linking main.elf success.
+2020-02-23 14:51:09 INFO Copying main.elf success.
+2020-02-23 14:51:09 ERROR Flash binary into STM32 failed.
+2020-02-23 14:51:09 WARNING Trying flash binary again.
+2020-02-23 14:51:38 INFO Copying main.elf success.
+2020-02-23 14:51:38 INFO Build finished without error.
+2020-02-23 14:58:59 ERROR Objecting GUI/src/system.c failed, stop building.
+2020-02-23 14:59:25 INFO Objecting GUI/src/system.c success.
+2020-02-23 14:59:25 INFO Objecting GUI/src/window.c success.
+2020-02-23 14:59:25 INFO Objecting User/src/main.c success.
+2020-02-23 14:59:25 INFO Linking main.elf success.
+2020-02-23 14:59:25 INFO Copying main.elf success.
+2020-02-23 14:59:25 ERROR Flash binary into STM32 failed.
+2020-02-23 14:59:25 WARNING Trying flash binary again.
+2020-02-23 14:59:55 INFO Copying main.elf success.
+2020-02-23 14:59:55 INFO Build finished without error.
+2020-02-23 15:00:45 INFO Objecting GUI/src/window.c success.
+2020-02-23 15:00:45 INFO Linking main.elf success.
+2020-02-23 15:00:45 INFO Copying main.elf success.
+2020-02-23 15:00:45 INFO Build finished without error.
+2020-02-23 15:03:52 INFO Objecting User/src/main.c success.
+2020-02-23 15:03:52 INFO Linking main.elf success.
+2020-02-23 15:03:52 INFO Copying main.elf success.
+2020-02-23 15:03:52 ERROR Flash binary into STM32 failed.
+2020-02-23 15:03:52 WARNING Trying flash binary again.
+2020-02-23 15:04:22 INFO Objecting GUI/src/app.c success.
+2020-02-23 15:04:22 INFO Linking main.elf success.
+2020-02-23 15:04:22 INFO Copying main.elf success.
+2020-02-23 15:04:22 INFO Build finished without error.
+2020-02-23 15:06:52 INFO Objecting GUI/src/app.c success.
+2020-02-23 15:06:52 INFO Objecting GUI/src/widget.c success.
+2020-02-23 15:06:52 INFO Objecting User/src/usbh_usr.c success.
+2020-02-23 15:06:52 INFO Linking main.elf success.
+2020-02-23 15:06:52 INFO Copying main.elf success.
+2020-02-23 15:06:52 ERROR Flash binary into STM32 failed.
+2020-02-23 15:06:52 WARNING Trying flash binary again.
+2020-02-23 15:07:22 INFO Objecting GUI/src/app.c success.
+2020-02-23 15:07:22 INFO Linking main.elf success.
+2020-02-23 15:07:22 INFO Copying main.elf success.
+2020-02-23 15:07:22 INFO Build finished without error.
+2020-02-23 15:09:03 INFO Objecting GUI/src/app.c success.
+2020-02-23 15:09:03 INFO Linking main.elf success.
+2020-02-23 15:09:03 INFO Copying main.elf success.
+2020-02-23 15:09:03 ERROR Flash binary into STM32 failed.
+2020-02-23 15:09:03 WARNING Trying flash binary again.
+2020-02-23 15:09:32 INFO Copying main.elf success.
+2020-02-23 15:09:32 INFO Build finished without error.
+2020-02-23 15:11:45 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 15:11:45 INFO Linking main.elf success.
+2020-02-23 15:11:45 INFO Copying main.elf success.
+2020-02-23 15:11:45 ERROR Flash binary into STM32 failed.
+2020-02-23 15:11:45 WARNING Trying flash binary again.
+2020-02-23 15:12:13 INFO Copying main.elf success.
+2020-02-23 15:12:13 INFO Build finished without error.
+2020-02-23 15:12:56 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 15:12:56 INFO Linking main.elf success.
+2020-02-23 15:12:56 INFO Copying main.elf success.
+2020-02-23 15:12:56 ERROR Flash binary into STM32 failed.
+2020-02-23 15:12:56 WARNING Trying flash binary again.
+2020-02-23 15:13:25 INFO Copying main.elf success.
+2020-02-23 15:13:25 INFO Build finished without error.
+2020-02-23 16:02:06 ERROR Objecting GUI/src/mouse.c failed, stop building.
+2020-02-23 16:02:27 ERROR Objecting GUI/src/mouse.c failed, stop building.
+2020-02-23 16:03:49 ERROR Objecting GUI/src/mouse.c failed, stop building.
+2020-02-23 16:04:08 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:04:08 INFO Objecting User/src/main.c success.
+2020-02-23 16:04:08 INFO Linking main.elf success.
+2020-02-23 16:04:08 INFO Copying main.elf success.
+2020-02-23 16:04:13 INFO Copying main.elf success.
+2020-02-23 16:04:13 ERROR Flash binary into STM32 failed.
+2020-02-23 16:04:13 WARNING Trying flash binary again.
+2020-02-23 16:04:40 INFO Copying main.elf success.
+2020-02-23 16:04:40 INFO Build finished without error.
+2020-02-23 16:07:13 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:07:13 INFO Linking main.elf success.
+2020-02-23 16:07:13 INFO Copying main.elf success.
+2020-02-23 16:07:13 ERROR Flash binary into STM32 failed.
+2020-02-23 16:07:13 WARNING Trying flash binary again.
+2020-02-23 16:07:42 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:07:42 INFO Linking main.elf success.
+2020-02-23 16:07:42 INFO Copying main.elf success.
+2020-02-23 16:07:42 INFO Build finished without error.
+2020-02-23 16:09:06 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:09:06 INFO Linking main.elf success.
+2020-02-23 16:09:06 INFO Copying main.elf success.
+2020-02-23 16:09:06 ERROR Flash binary into STM32 failed.
+2020-02-23 16:09:06 WARNING Trying flash binary again.
+2020-02-23 16:09:35 INFO Copying main.elf success.
+2020-02-23 16:09:35 INFO Build finished without error.
+2020-02-23 16:11:27 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:11:27 INFO Linking main.elf success.
+2020-02-23 16:11:27 INFO Copying main.elf success.
+2020-02-23 16:11:27 ERROR Flash binary into STM32 failed.
+2020-02-23 16:11:27 WARNING Trying flash binary again.
+2020-02-23 16:11:57 INFO Copying main.elf success.
+2020-02-23 16:11:57 INFO Build finished without error.
+2020-02-23 16:13:40 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:13:40 INFO Linking main.elf success.
+2020-02-23 16:13:40 INFO Copying main.elf success.
+2020-02-23 16:13:40 ERROR Flash binary into STM32 failed.
+2020-02-23 16:13:40 WARNING Trying flash binary again.
+2020-02-23 16:14:08 INFO Copying main.elf success.
+2020-02-23 16:14:08 INFO Build finished without error.
+2020-02-23 16:20:12 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:20:12 INFO Linking main.elf success.
+2020-02-23 16:20:12 INFO Copying main.elf success.
+2020-02-23 16:20:12 ERROR Flash binary into STM32 failed.
+2020-02-23 16:20:12 WARNING Trying flash binary again.
+2020-02-23 16:20:41 INFO Copying main.elf success.
+2020-02-23 16:20:41 INFO Build finished without error.
+2020-02-23 16:21:54 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:21:54 INFO Linking main.elf success.
+2020-02-23 16:21:54 INFO Copying main.elf success.
+2020-02-23 16:21:54 ERROR Flash binary into STM32 failed.
+2020-02-23 16:21:54 WARNING Trying flash binary again.
+2020-02-23 16:22:23 INFO Copying main.elf success.
+2020-02-23 16:22:23 INFO Build finished without error.
+2020-02-23 16:24:33 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:24:33 INFO Linking main.elf success.
+2020-02-23 16:24:33 INFO Copying main.elf success.
+2020-02-23 16:24:33 ERROR Flash binary into STM32 failed.
+2020-02-23 16:24:33 WARNING Trying flash binary again.
+2020-02-23 16:25:02 INFO Copying main.elf success.
+2020-02-23 16:25:02 INFO Build finished without error.
+2020-02-23 16:28:12 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:28:12 INFO Linking main.elf success.
+2020-02-23 16:28:12 INFO Copying main.elf success.
+2020-02-23 16:28:12 ERROR Flash binary into STM32 failed.
+2020-02-23 16:28:12 WARNING Trying flash binary again.
+2020-02-23 16:28:41 INFO Copying main.elf success.
+2020-02-23 16:28:41 INFO Build finished without error.
+2020-02-23 16:30:15 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:30:15 INFO Linking main.elf success.
+2020-02-23 16:30:15 INFO Copying main.elf success.
+2020-02-23 16:30:15 ERROR Flash binary into STM32 failed.
+2020-02-23 16:30:15 WARNING Trying flash binary again.
+2020-02-23 16:30:44 INFO Copying main.elf success.
+2020-02-23 16:30:44 INFO Build finished without error.
+2020-02-23 16:31:33 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:31:33 INFO Linking main.elf success.
+2020-02-23 16:31:33 INFO Copying main.elf success.
+2020-02-23 16:31:33 ERROR Flash binary into STM32 failed.
+2020-02-23 16:31:33 WARNING Trying flash binary again.
+2020-02-23 16:32:04 INFO Copying main.elf success.
+2020-02-23 16:32:04 INFO Build finished without error.
+2020-02-23 16:33:58 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:33:58 INFO Linking main.elf success.
+2020-02-23 16:33:58 INFO Copying main.elf success.
+2020-02-23 16:33:58 ERROR Flash binary into STM32 failed.
+2020-02-23 16:33:58 WARNING Trying flash binary again.
+2020-02-23 16:34:27 INFO Copying main.elf success.
+2020-02-23 16:34:27 INFO Build finished without error.
+2020-02-23 16:37:50 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:37:50 INFO Linking main.elf success.
+2020-02-23 16:37:50 INFO Copying main.elf success.
+2020-02-23 16:37:50 ERROR Flash binary into STM32 failed.
+2020-02-23 16:37:50 WARNING Trying flash binary again.
+2020-02-23 16:38:19 INFO Copying main.elf success.
+2020-02-23 16:38:19 INFO Build finished without error.
+2020-02-23 16:41:24 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:41:24 INFO Objecting User/src/LCD.c success.
+2020-02-23 16:41:24 INFO Linking main.elf success.
+2020-02-23 16:41:24 INFO Copying main.elf success.
+2020-02-23 16:41:24 ERROR Flash binary into STM32 failed.
+2020-02-23 16:41:24 WARNING Trying flash binary again.
+2020-02-23 16:41:53 INFO Copying main.elf success.
+2020-02-23 16:41:53 INFO Build finished without error.
+2020-02-23 16:49:25 ERROR Objecting GUI/src/mouse.c failed, stop building.
+2020-02-23 16:49:53 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:49:53 INFO Linking main.elf success.
+2020-02-23 16:49:53 INFO Copying main.elf success.
+2020-02-23 16:49:53 ERROR Flash binary into STM32 failed.
+2020-02-23 16:49:53 WARNING Trying flash binary again.
+2020-02-23 16:50:22 INFO Copying main.elf success.
+2020-02-23 16:50:22 INFO Build finished without error.
+2020-02-23 16:51:33 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:51:33 INFO Linking main.elf success.
+2020-02-23 16:51:33 INFO Copying main.elf success.
+2020-02-23 16:51:33 ERROR Flash binary into STM32 failed.
+2020-02-23 16:51:33 WARNING Trying flash binary again.
+2020-02-23 16:52:01 INFO Copying main.elf success.
+2020-02-23 16:52:01 INFO Build finished without error.
+2020-02-23 16:52:50 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:52:50 INFO Linking main.elf success.
+2020-02-23 16:52:50 INFO Copying main.elf success.
+2020-02-23 16:52:50 ERROR Flash binary into STM32 failed.
+2020-02-23 16:52:50 WARNING Trying flash binary again.
+2020-02-23 16:53:21 INFO Copying main.elf success.
+2020-02-23 16:53:21 INFO Build finished without error.
+2020-02-23 16:54:19 ERROR Objecting GUI/src/mouse.c failed, stop building.
+2020-02-23 16:54:33 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:54:33 INFO Linking main.elf success.
+2020-02-23 16:54:33 INFO Copying main.elf success.
+2020-02-23 16:54:33 ERROR Flash binary into STM32 failed.
+2020-02-23 16:54:33 WARNING Trying flash binary again.
+2020-02-23 16:55:01 INFO Copying main.elf success.
+2020-02-23 16:55:01 INFO Build finished without error.
+2020-02-23 16:57:24 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 16:57:24 INFO Linking main.elf success.
+2020-02-23 16:57:24 INFO Copying main.elf success.
+2020-02-23 16:57:24 ERROR Flash binary into STM32 failed.
+2020-02-23 16:57:24 WARNING Trying flash binary again.
+2020-02-23 16:57:52 INFO Copying main.elf success.
+2020-02-23 16:57:52 INFO Build finished without error.
+2020-02-23 17:01:56 INFO Objecting GUI/src/dc.c success.
+2020-02-23 17:01:56 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:01:56 INFO Linking main.elf success.
+2020-02-23 17:01:56 INFO Copying main.elf success.
+2020-02-23 17:01:56 ERROR Flash binary into STM32 failed.
+2020-02-23 17:01:56 WARNING Trying flash binary again.
+2020-02-23 17:02:25 INFO Copying main.elf success.
+2020-02-23 17:02:25 INFO Build finished without error.
+2020-02-23 17:14:28 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:14:28 INFO Objecting User/src/usbh_usr.c success.
+2020-02-23 17:14:28 INFO Linking main.elf success.
+2020-02-23 17:14:28 INFO Copying main.elf success.
+2020-02-23 17:14:28 ERROR Flash binary into STM32 failed.
+2020-02-23 17:14:28 WARNING Trying flash binary again.
+2020-02-23 17:15:00 INFO Copying main.elf success.
+2020-02-23 17:15:00 INFO Build finished without error.
+2020-02-23 17:16:19 INFO Objecting User/src/usbh_usr.c success.
+2020-02-23 17:16:19 INFO Linking main.elf success.
+2020-02-23 17:16:19 INFO Copying main.elf success.
+2020-02-23 17:16:46 INFO Copying main.elf success.
+2020-02-23 17:16:46 ERROR Flash binary into STM32 failed.
+2020-02-23 17:16:46 WARNING Trying flash binary again.
+2020-02-23 17:17:14 INFO Objecting User/src/usbh_usr.c success.
+2020-02-23 17:17:14 INFO Linking main.elf success.
+2020-02-23 17:17:14 INFO Copying main.elf success.
+2020-02-23 17:17:14 INFO Build finished without error.
+2020-02-23 17:18:16 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:18:16 INFO Linking main.elf success.
+2020-02-23 17:18:16 INFO Copying main.elf success.
+2020-02-23 17:18:16 ERROR Flash binary into STM32 failed.
+2020-02-23 17:18:16 WARNING Trying flash binary again.
+2020-02-23 17:18:45 INFO Copying main.elf success.
+2020-02-23 17:18:45 INFO Build finished without error.
+2020-02-23 17:20:25 ERROR Objecting GUI/src/mouse.c failed, stop building.
+2020-02-23 17:20:38 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:20:38 INFO Linking main.elf success.
+2020-02-23 17:20:38 INFO Copying main.elf success.
+2020-02-23 17:20:59 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:20:59 INFO Linking main.elf success.
+2020-02-23 17:20:59 INFO Copying main.elf success.
+2020-02-23 17:20:59 ERROR Flash binary into STM32 failed.
+2020-02-23 17:20:59 WARNING Trying flash binary again.
+2020-02-23 17:21:27 INFO Copying main.elf success.
+2020-02-23 17:21:27 INFO Build finished without error.
+2020-02-23 17:22:11 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:22:11 INFO Linking main.elf success.
+2020-02-23 17:22:11 INFO Copying main.elf success.
+2020-02-23 17:22:11 ERROR Flash binary into STM32 failed.
+2020-02-23 17:22:11 WARNING Trying flash binary again.
+2020-02-23 17:22:42 INFO Copying main.elf success.
+2020-02-23 17:22:42 INFO Build finished without error.
+2020-02-23 17:23:27 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:23:27 INFO Linking main.elf success.
+2020-02-23 17:23:27 INFO Copying main.elf success.
+2020-02-23 17:23:27 ERROR Flash binary into STM32 failed.
+2020-02-23 17:23:27 WARNING Trying flash binary again.
+2020-02-23 17:23:56 INFO Copying main.elf success.
+2020-02-23 17:23:56 INFO Build finished without error.
+2020-02-23 17:25:51 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:25:51 ERROR Linking main.elf failed, stop building.
+2020-02-23 17:26:04 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:26:04 INFO Linking main.elf success.
+2020-02-23 17:26:04 INFO Copying main.elf success.
+2020-02-23 17:26:04 ERROR Flash binary into STM32 failed.
+2020-02-23 17:26:04 WARNING Trying flash binary again.
+2020-02-23 17:26:32 INFO Copying main.elf success.
+2020-02-23 17:26:32 INFO Build finished without error.
+2020-02-23 17:28:13 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:28:13 INFO Linking main.elf success.
+2020-02-23 17:28:13 INFO Copying main.elf success.
+2020-02-23 17:28:13 ERROR Flash binary into STM32 failed.
+2020-02-23 17:28:13 WARNING Trying flash binary again.
+2020-02-23 17:28:41 INFO Copying main.elf success.
+2020-02-23 17:28:41 INFO Build finished without error.
+2020-02-23 17:29:39 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:29:39 INFO Linking main.elf success.
+2020-02-23 17:29:39 INFO Copying main.elf success.
+2020-02-23 17:29:56 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:29:56 INFO Linking main.elf success.
+2020-02-23 17:29:56 INFO Copying main.elf success.
+2020-02-23 17:29:56 ERROR Flash binary into STM32 failed.
+2020-02-23 17:29:56 WARNING Trying flash binary again.
+2020-02-23 17:30:24 INFO Copying main.elf success.
+2020-02-23 17:30:24 INFO Build finished without error.
+2020-02-23 17:31:38 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:31:38 INFO Linking main.elf success.
+2020-02-23 17:31:38 INFO Copying main.elf success.
+2020-02-23 17:31:38 ERROR Flash binary into STM32 failed.
+2020-02-23 17:31:38 WARNING Trying flash binary again.
+2020-02-23 17:32:07 INFO Copying main.elf success.
+2020-02-23 17:32:07 INFO Build finished without error.
+2020-02-23 17:35:19 INFO Objecting User/src/main.c success.
+2020-02-23 17:35:19 INFO Linking main.elf success.
+2020-02-23 17:35:19 INFO Copying main.elf success.
+2020-02-23 17:35:19 ERROR Flash binary into STM32 failed.
+2020-02-23 17:35:19 WARNING Trying flash binary again.
+2020-02-23 17:35:49 INFO Copying main.elf success.
+2020-02-23 17:35:49 INFO Build finished without error.
+2020-02-23 17:38:09 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:38:09 INFO Linking main.elf success.
+2020-02-23 17:38:09 INFO Copying main.elf success.
+2020-02-23 17:38:09 ERROR Flash binary into STM32 failed.
+2020-02-23 17:38:09 WARNING Trying flash binary again.
+2020-02-23 17:38:38 INFO Copying main.elf success.
+2020-02-23 17:38:38 INFO Build finished without error.
+2020-02-23 17:39:26 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:39:26 INFO Linking main.elf success.
+2020-02-23 17:39:26 INFO Copying main.elf success.
+2020-02-23 17:39:26 ERROR Flash binary into STM32 failed.
+2020-02-23 17:39:26 WARNING Trying flash binary again.
+2020-02-23 17:39:54 INFO Copying main.elf success.
+2020-02-23 17:39:54 INFO Build finished without error.
+2020-02-23 17:41:24 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:41:24 INFO Linking main.elf success.
+2020-02-23 17:41:24 INFO Copying main.elf success.
+2020-02-23 17:41:24 ERROR Flash binary into STM32 failed.
+2020-02-23 17:41:24 WARNING Trying flash binary again.
+2020-02-23 17:41:53 INFO Copying main.elf success.
+2020-02-23 17:41:53 INFO Build finished without error.
+2020-02-23 17:43:03 INFO Copying main.elf success.
+2020-02-23 17:43:03 ERROR Flash binary into STM32 failed.
+2020-02-23 17:43:03 WARNING Trying flash binary again.
+2020-02-23 17:43:31 INFO Copying main.elf success.
+2020-02-23 17:43:31 INFO Build finished without error.
+2020-02-23 17:46:02 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:46:02 INFO Linking main.elf success.
+2020-02-23 17:46:02 INFO Copying main.elf success.
+2020-02-23 17:46:02 ERROR Flash binary into STM32 failed.
+2020-02-23 17:46:02 WARNING Trying flash binary again.
+2020-02-23 17:46:31 INFO Copying main.elf success.
+2020-02-23 17:46:31 INFO Build finished without error.
+2020-02-23 17:47:27 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:47:27 INFO Linking main.elf success.
+2020-02-23 17:47:27 INFO Copying main.elf success.
+2020-02-23 17:47:27 ERROR Flash binary into STM32 failed.
+2020-02-23 17:47:27 WARNING Trying flash binary again.
+2020-02-23 17:47:58 INFO Copying main.elf success.
+2020-02-23 17:47:58 INFO Build finished without error.
+2020-02-23 17:49:52 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:49:52 INFO Linking main.elf success.
+2020-02-23 17:49:52 INFO Copying main.elf success.
+2020-02-23 17:49:52 ERROR Flash binary into STM32 failed.
+2020-02-23 17:49:52 WARNING Trying flash binary again.
+2020-02-23 17:50:20 INFO Copying main.elf success.
+2020-02-23 17:50:20 INFO Build finished without error.
+2020-02-23 17:51:07 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 17:51:07 INFO Linking main.elf success.
+2020-02-23 17:51:07 INFO Copying main.elf success.
+2020-02-23 17:51:07 ERROR Flash binary into STM32 failed.
+2020-02-23 17:51:07 WARNING Trying flash binary again.
+2020-02-23 17:51:37 INFO Copying main.elf success.
+2020-02-23 17:51:37 INFO Build finished without error.
+2020-02-23 17:53:53 ERROR Objecting GUI/src/color.c failed, stop building.
+2020-02-23 17:54:15 ERROR Objecting GUI/src/color.c failed, stop building.
+2020-02-23 17:54:47 ERROR Objecting GUI/src/color.c failed, stop building.
+2020-02-23 17:55:27 ERROR Objecting GUI/src/color.c failed, stop building.
+2020-02-23 17:55:32 ERROR Objecting GUI/src/color.c failed, stop building.
+2020-02-23 17:57:32 INFO Objecting GUI/src/color.c success.
+2020-02-23 17:57:32 INFO Linking main.elf success.
+2020-02-23 17:57:32 INFO Copying main.elf success.
+2020-02-23 17:57:32 ERROR Flash binary into STM32 failed.
+2020-02-23 17:57:32 WARNING Trying flash binary again.
+2020-02-23 17:58:03 INFO Copying main.elf success.
+2020-02-23 17:58:03 INFO Build finished without error.
+2020-02-23 18:03:07 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:03:07 INFO Linking main.elf success.
+2020-02-23 18:03:07 INFO Copying main.elf success.
+2020-02-23 18:03:07 ERROR Flash binary into STM32 failed.
+2020-02-23 18:03:07 WARNING Trying flash binary again.
+2020-02-23 18:03:36 INFO Copying main.elf success.
+2020-02-23 18:03:36 INFO Build finished without error.
+2020-02-23 18:05:06 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:05:06 INFO Linking main.elf success.
+2020-02-23 18:05:06 INFO Copying main.elf success.
+2020-02-23 18:05:06 ERROR Flash binary into STM32 failed.
+2020-02-23 18:05:06 WARNING Trying flash binary again.
+2020-02-23 18:05:34 INFO Copying main.elf success.
+2020-02-23 18:05:34 INFO Build finished without error.
+2020-02-23 18:10:28 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:10:28 INFO Linking main.elf success.
+2020-02-23 18:10:28 INFO Copying main.elf success.
+2020-02-23 18:10:28 ERROR Flash binary into STM32 failed.
+2020-02-23 18:10:28 WARNING Trying flash binary again.
+2020-02-23 18:10:57 INFO Copying main.elf success.
+2020-02-23 18:10:57 INFO Build finished without error.
+2020-02-23 18:12:23 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:12:23 INFO Linking main.elf success.
+2020-02-23 18:12:23 INFO Copying main.elf success.
+2020-02-23 18:12:23 ERROR Flash binary into STM32 failed.
+2020-02-23 18:12:23 WARNING Trying flash binary again.
+2020-02-23 18:12:51 INFO Copying main.elf success.
+2020-02-23 18:12:51 INFO Build finished without error.
+2020-02-23 18:15:32 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:15:32 INFO Linking main.elf success.
+2020-02-23 18:15:32 INFO Copying main.elf success.
+2020-02-23 18:15:32 ERROR Flash binary into STM32 failed.
+2020-02-23 18:15:32 WARNING Trying flash binary again.
+2020-02-23 18:16:01 INFO Copying main.elf success.
+2020-02-23 18:16:01 INFO Build finished without error.
+2020-02-23 18:16:49 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:16:49 INFO Linking main.elf success.
+2020-02-23 18:16:49 INFO Copying main.elf success.
+2020-02-23 18:16:49 ERROR Flash binary into STM32 failed.
+2020-02-23 18:16:49 WARNING Trying flash binary again.
+2020-02-23 18:17:17 INFO Copying main.elf success.
+2020-02-23 18:17:17 INFO Build finished without error.
+2020-02-23 18:19:12 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:19:12 INFO Linking main.elf success.
+2020-02-23 18:19:12 INFO Copying main.elf success.
+2020-02-23 18:19:12 ERROR Flash binary into STM32 failed.
+2020-02-23 18:19:12 WARNING Trying flash binary again.
+2020-02-23 18:19:40 INFO Copying main.elf success.
+2020-02-23 18:19:40 INFO Build finished without error.
+2020-02-23 18:20:38 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:20:38 INFO Linking main.elf success.
+2020-02-23 18:20:38 INFO Copying main.elf success.
+2020-02-23 18:20:38 ERROR Flash binary into STM32 failed.
+2020-02-23 18:20:38 WARNING Trying flash binary again.
+2020-02-23 18:21:06 INFO Copying main.elf success.
+2020-02-23 18:21:06 INFO Build finished without error.
+2020-02-23 18:22:22 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:22:22 INFO Linking main.elf success.
+2020-02-23 18:22:22 INFO Copying main.elf success.
+2020-02-23 18:22:22 ERROR Flash binary into STM32 failed.
+2020-02-23 18:22:22 WARNING Trying flash binary again.
+2020-02-23 18:22:54 INFO Copying main.elf success.
+2020-02-23 18:22:54 INFO Build finished without error.
+2020-02-23 18:27:18 INFO Objecting GUI/src/system.c success.
+2020-02-23 18:27:18 INFO Objecting GUI/src/window.c success.
+2020-02-23 18:27:18 INFO Linking main.elf success.
+2020-02-23 18:27:18 INFO Copying main.elf success.
+2020-02-23 18:27:35 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:27:35 INFO Linking main.elf success.
+2020-02-23 18:27:35 INFO Copying main.elf success.
+2020-02-23 18:27:35 ERROR Flash binary into STM32 failed.
+2020-02-23 18:27:35 WARNING Trying flash binary again.
+2020-02-23 18:28:07 INFO Copying main.elf success.
+2020-02-23 18:28:07 INFO Build finished without error.
+2020-02-23 18:30:03 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:30:03 INFO Linking main.elf success.
+2020-02-23 18:30:03 INFO Copying main.elf success.
+2020-02-23 18:30:03 ERROR Flash binary into STM32 failed.
+2020-02-23 18:30:03 WARNING Trying flash binary again.
+2020-02-23 18:30:32 INFO Copying main.elf success.
+2020-02-23 18:30:32 INFO Build finished without error.
+2020-02-23 18:31:59 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:31:59 INFO Linking main.elf success.
+2020-02-23 18:31:59 INFO Copying main.elf success.
+2020-02-23 18:31:59 ERROR Flash binary into STM32 failed.
+2020-02-23 18:31:59 WARNING Trying flash binary again.
+2020-02-23 18:32:27 INFO Copying main.elf success.
+2020-02-23 18:32:27 INFO Build finished without error.
+2020-02-23 18:33:05 INFO Copying main.elf success.
+2020-02-23 18:34:59 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:34:59 INFO Linking main.elf success.
+2020-02-23 18:34:59 INFO Copying main.elf success.
+2020-02-23 18:34:59 ERROR Flash binary into STM32 failed.
+2020-02-23 18:34:59 WARNING Trying flash binary again.
+2020-02-23 18:35:27 INFO Copying main.elf success.
+2020-02-23 18:35:27 INFO Build finished without error.
+2020-02-23 18:37:29 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:37:29 INFO Linking main.elf success.
+2020-02-23 18:37:29 INFO Copying main.elf success.
+2020-02-23 18:37:29 ERROR Flash binary into STM32 failed.
+2020-02-23 18:37:29 WARNING Trying flash binary again.
+2020-02-23 18:37:58 INFO Copying main.elf success.
+2020-02-23 18:37:58 INFO Build finished without error.
+2020-02-23 18:38:44 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:38:44 INFO Linking main.elf success.
+2020-02-23 18:38:44 INFO Copying main.elf success.
+2020-02-23 18:38:44 ERROR Flash binary into STM32 failed.
+2020-02-23 18:38:44 WARNING Trying flash binary again.
+2020-02-23 18:39:13 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:39:13 INFO Linking main.elf success.
+2020-02-23 18:39:13 INFO Copying main.elf success.
+2020-02-23 18:39:13 INFO Build finished without error.
+2020-02-23 18:41:12 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:41:12 INFO Linking main.elf success.
+2020-02-23 18:41:12 INFO Copying main.elf success.
+2020-02-23 18:41:12 ERROR Flash binary into STM32 failed.
+2020-02-23 18:41:12 WARNING Trying flash binary again.
+2020-02-23 18:41:41 INFO Copying main.elf success.
+2020-02-23 18:41:41 INFO Build finished without error.
+2020-02-23 18:45:22 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:45:22 INFO Linking main.elf success.
+2020-02-23 18:45:22 INFO Copying main.elf success.
+2020-02-23 18:45:22 ERROR Flash binary into STM32 failed.
+2020-02-23 18:45:22 WARNING Trying flash binary again.
+2020-02-23 18:45:51 INFO Copying main.elf success.
+2020-02-23 18:45:51 INFO Build finished without error.
+2020-02-23 18:46:41 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:46:41 INFO Linking main.elf success.
+2020-02-23 18:46:41 INFO Copying main.elf success.
+2020-02-23 18:46:41 ERROR Flash binary into STM32 failed.
+2020-02-23 18:46:41 WARNING Trying flash binary again.
+2020-02-23 18:47:10 INFO Copying main.elf success.
+2020-02-23 18:47:10 INFO Build finished without error.
+2020-02-23 18:48:28 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:48:28 INFO Linking main.elf success.
+2020-02-23 18:48:28 INFO Copying main.elf success.
+2020-02-23 18:48:28 ERROR Flash binary into STM32 failed.
+2020-02-23 18:48:28 WARNING Trying flash binary again.
+2020-02-23 18:48:56 INFO Copying main.elf success.
+2020-02-23 18:48:56 INFO Build finished without error.
+2020-02-23 18:49:49 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 18:49:49 INFO Linking main.elf success.
+2020-02-23 18:49:49 INFO Copying main.elf success.
+2020-02-23 18:49:49 ERROR Flash binary into STM32 failed.
+2020-02-23 18:49:49 WARNING Trying flash binary again.
+2020-02-23 18:50:18 INFO Copying main.elf success.
+2020-02-23 18:50:18 INFO Build finished without error.
+2020-02-23 19:10:40 ERROR Objecting GUI/src/mouse.c failed, stop building.
+2020-02-23 19:11:51 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 19:11:51 INFO Objecting GUI/src/symbol.c success.
+2020-02-23 19:11:51 INFO Linking main.elf success.
+2020-02-23 19:11:51 INFO Copying main.elf success.
+2020-02-23 19:11:51 ERROR Flash binary into STM32 failed.
+2020-02-23 19:11:51 WARNING Trying flash binary again.
+2020-02-23 19:12:21 INFO Copying main.elf success.
+2020-02-23 19:12:21 INFO Build finished without error.
+2020-02-23 19:13:21 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 19:13:21 INFO Linking main.elf success.
+2020-02-23 19:13:21 INFO Copying main.elf success.
+2020-02-23 19:13:21 INFO Build finished without error.
+2020-02-23 20:02:55 INFO Objecting GUI/src/symbol.c success.
+2020-02-23 20:02:55 INFO Linking main.elf success.
+2020-02-23 20:02:55 INFO Copying main.elf success.
+2020-02-23 20:02:55 ERROR Flash binary into STM32 failed.
+2020-02-23 20:02:55 WARNING Trying flash binary again.
+2020-02-23 20:03:23 INFO Copying main.elf success.
+2020-02-23 20:03:23 INFO Build finished without error.
+2020-02-23 20:04:02 INFO Objecting GUI/src/symbol.c success.
+2020-02-23 20:04:02 INFO Linking main.elf success.
+2020-02-23 20:04:02 INFO Copying main.elf success.
+2020-02-23 20:04:02 ERROR Flash binary into STM32 failed.
+2020-02-23 20:04:02 WARNING Trying flash binary again.
+2020-02-23 20:04:31 INFO Copying main.elf success.
+2020-02-23 20:04:31 INFO Build finished without error.
+2020-02-23 20:07:31 INFO Objecting GUI/src/mouse.c success.
+2020-02-23 20:07:31 INFO Linking main.elf success.
+2020-02-23 20:07:31 INFO Copying main.elf success.
+2020-02-23 20:07:31 ERROR Flash binary into STM32 failed.
+2020-02-23 20:07:31 WARNING Trying flash binary again.
+2020-02-23 20:08:00 INFO Copying main.elf success.
+2020-02-23 20:08:00 INFO Build finished without error.
+2020-02-23 20:09:18 INFO Push to remote branch 'mouse_dev' from 'gui' success.

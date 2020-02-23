@@ -372,15 +372,15 @@ void  USR_MOUSE_Init (void)
 {
     cogui_printf("[system] Connect to a mouse.\r\n");
 
-    update_cursor(115*4, 155*4, 0);                     /* set cursor position in middle of screen              */
+    cursor[0] = 115;
+    cursor[1] = 155;
+    //update_cursor(0, 0, 0);                     /* set cursor position in middle of screen              */
 
     USB_Host_status = USB_HOST_MOUSE_CONNECT;
 }
 
 void  USR_MOUSE_ProcessData (HID_MOUSE_Data_TypeDef *data)
 {
-    cogui_printf("[system] %s (%d, %d, %d)\r\n", (char *)MSG_MOUSE_INPUT, data->x, data->y, data->button);
-
     if (data->x || data->y) {
         USB_Host_status = USB_HOST_MOUSE_MOVE;
 
