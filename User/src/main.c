@@ -76,7 +76,7 @@ void app_a_paint()
 	
 	cogui_widget_t *test_wgt1 = cogui_widget_create(win);
 	cogui_widget_set_rectangle(test_wgt1, 100, 100, 100, 100);
-	test_wgt1->gc.background = COGUI_RED;
+	test_wgt1->gc.background = red;
 	
 	test_wgt1->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
 
@@ -129,7 +129,7 @@ void app_b_paint()
     /* widget 1: top-left */
     cogui_widget_t *font_ex = cogui_widget_create(win);
 	cogui_widget_set_rectangle(font_ex, 5, 45, 230, 50);
-	font_ex->gc.background = COGUI_BLUE;
+	font_ex->gc.background = blue;
 	font_ex->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
     font_ex->gc.padding = COGUI_PADDING_SIMPLE(5);
     cogui_widget_set_text_align(font_ex, COGUI_TEXT_ALIGN_LEFT|COGUI_TEXT_ALIGN_TOP);
@@ -139,7 +139,7 @@ void app_b_paint()
     /* widget 2: middle-center */
     font_ex = cogui_widget_create(win);
 	cogui_widget_set_rectangle(font_ex, 5, 100, 230, 50);
-	font_ex->gc.background = COGUI_RED;
+	font_ex->gc.background = red;
 	font_ex->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
     font_ex->gc.padding = COGUI_PADDING_SIMPLE(5);
     cogui_widget_set_text_align(font_ex, COGUI_TEXT_ALIGN_CENTER|COGUI_TEXT_ALIGN_MIDDLE);
@@ -149,8 +149,8 @@ void app_b_paint()
     /* widget 3: bottom-right */
     font_ex = cogui_widget_create(win);
 	cogui_widget_set_rectangle(font_ex, 5, 155, 230, 50);
-	font_ex->gc.background = COGUI_GREEN;
-	font_ex->gc.foreground = COGUI_DARK_GRAY;
+	font_ex->gc.background = green;
+	font_ex->gc.foreground = dark_grey;
 	font_ex->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
     font_ex->gc.padding = COGUI_PADDING_SIMPLE(5);
     cogui_widget_set_text_align(font_ex, COGUI_TEXT_ALIGN_BOTTOM|COGUI_TEXT_ALIGN_RIGHT);
@@ -160,8 +160,8 @@ void app_b_paint()
     /* widget 4: font size 11x18 */
     font_ex = cogui_widget_create(win);
 	cogui_widget_set_rectangle(font_ex, 5, 210, 230, 50);
-	font_ex->gc.background = COGUI_YELLOW;
-	font_ex->gc.foreground = COGUI_DARK_GRAY;
+	font_ex->gc.background = yellow;
+	font_ex->gc.foreground = dark_grey;
 	font_ex->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
     font_ex->gc.padding = COGUI_PADDING_SIMPLE(15);
     cogui_widget_set_font(font_ex, &tm_font_11x18);
@@ -172,7 +172,7 @@ void app_b_paint()
     /* widget 5: font size 16x26 */
     font_ex = cogui_widget_create(win);
 	cogui_widget_set_rectangle(font_ex, 5, 265, 230, 50);
-	font_ex->gc.background = COGUI_PURPLE;
+	font_ex->gc.background = purple;
 	font_ex->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
     font_ex->gc.padding = COGUI_PADDING_SIMPLE(10);
     cogui_widget_set_font(font_ex, &tm_font_16x26);
@@ -298,7 +298,7 @@ int main(void)
 
     stm_print_string("\t│\t\t[sys] Testing The LCD ..................");
     LCD_SetLayer(LCD_BACKGROUND_LAYER);
-	LCD_Clear(COGUI_WHITE);
+	LCD_Clear(white);
 	LCD_SetLayer(LCD_FOREGROUND_LAYER);
 	stm_print_string(GRN_BOLD"\t[OK]\t\t"ARESET"│\r\n");
 

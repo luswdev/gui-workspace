@@ -318,19 +318,19 @@ void update_cursor(int16_t dx, int16_t dy, uint8_t btn)
     switch (btn)
     {
         case 1:
-            LCD_SetTextColor(COGUI_BLUE);               /* set background: blue if button-left pressed          */
+            LCD_SetTextColor(blue);               /* set background: blue if button-left pressed          */
             break;
 
         case 2:
-            LCD_SetTextColor(COGUI_GREEN);              /* set background: green if button-right pressed        */
+            LCD_SetTextColor(green);              /* set background: green if button-right pressed        */
             break;
 
         case 3:
-            LCD_SetTextColor(COGUI_RED);                /* set background: red if both left and right pressed   */
+            LCD_SetTextColor(red);                /* set background: red if both left and right pressed   */
             break;
         
         default:
-            LCD_SetTextColor(COGUI_WHITE);              /* set background: white if no button pressed           */
+            LCD_SetTextColor(white);              /* set background: white if no button pressed           */
             break;
     }
     LCD_DrawFullRect(0, 0, 240, 320);                   /* return last cursor buffer                            */
@@ -353,7 +353,7 @@ void update_cursor(int16_t dx, int16_t dy, uint8_t btn)
         cursor[1] = 0;                                  /* min y: 0                                             */
     }
 
-    LCD_SetTextColor(COGUI_BLACK);
+    LCD_SetTextColor(black);
     LCD_DrawFullRect(cursor[0], cursor[1], 10, 10);     /* draw cursor                                          */
 #else
     struct cogui_event event;

@@ -39,19 +39,7 @@ $(wildcard ./CoOS/obj/*.o) \
 $(wildcard ./GUI/obj/*.o) \
 ./User/Startup/startup.o
 
-all: 
-	@echo "usage: make <target> <option>"
-	@echo ""
-	@echo "\tall \t\t\t\t print this information"
-	@echo "\trun \t\t\t\t build and flash binary into board"
-	@echo "\tbuild \t\t\t\t build binary file"
-	@echo "\tocd \t\t\t\t connect to board with openocd"
-	@echo "\tdebug \t\t\t\t debug using gdb tool"
-	@echo "\tgit  <commit log> \t\t upload GUI to github"
-	@echo "\tclean \t\t\t\t clean object files"
-	@echo "\t\tclean_dir \t\t clean object directory"
-	@echo "\t\tclean_log \t\t clean build log"
-	@echo ""
+all: run
 
 run: build
 	@echo $(YELLOW)"Flashing main.bin."$(RST)
@@ -108,10 +96,6 @@ debug:
 
 git: 
 	$(MAKE) git com_msg="$(filter-out $@,$(MAKECMDGOALS))" -C  GUI
-
-# handle argument error
-%:
-	@:
 
 clean:
 	$(MAKE) clean -e -C System
