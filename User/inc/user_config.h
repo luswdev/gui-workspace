@@ -30,6 +30,7 @@ void Delay_Init(void);
 /* printf */
 void stm_print_char(const char ch);
 void stm_print_string(const char *str);
+void wait_user_btn(char *s);
 void print_result(StatusType r, char *str);
 void print_task_list(void);
 

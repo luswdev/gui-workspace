@@ -379,6 +379,26 @@ void stm_print_string(const char *str)
     }
 }
 
+void wait_user_btn(char *s)
+{
+    uint16_t len;
+	len = cogui_printf(">>>>> Press the USER BUTTON to %s <<<<<\r", s);
+
+	 /* Wait for User push-button is pressed */
+    while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET) {
+    }
+    
+    /* Wait for User push-button is released */
+    while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_SET) {
+    }
+
+    /* clear ouput buffer with space */
+    while (len --){
+        cogui_printf(" ");
+    }
+    cogui_printf(" \r");
+}
+
 /**
  *******************************************************************************
  * @brief      Print result type by word.
@@ -389,7 +409,7 @@ void stm_print_string(const char *str)
  *******************************************************************************
  */
 void print_result(StatusType r, char *str) {
-    cogui_printf("[%10s] %-40s => ", "User", str);
+    cogui_printf("[User] %s => ", str);
 	switch (r) {
 		case GUI_E_ERROR:
 			cogui_printf(RED_BOLD"GUI_E_ERROR\r\n"ARESET);

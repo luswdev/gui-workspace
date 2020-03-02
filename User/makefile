@@ -13,6 +13,8 @@ CFLAGS  += $(INCFLAG)
 OBJS =\
 $(OBJDIR)/user_config.o \
 $(OBJDIR)/LCD.o \
+$(OBJDIR)/app_wgt.o \
+$(OBJDIR)/app_font.o \
 $(OBJDIR)/main.o \
 $(OBJDIR)/stm32f4xx_it.o \
 $(OBJDIR)/usbh_usr.o \
