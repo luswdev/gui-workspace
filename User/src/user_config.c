@@ -382,7 +382,7 @@ void stm_print_string(const char *str)
 void wait_user_btn(char *s)
 {
     uint16_t len;
-	len = cogui_printf(">>>>> Press the USER BUTTON to %s <<<<<\r", s);
+	len = gui_printf(">>>>> Press the USER BUTTON to %s <<<<<\r", s);
 
 	 /* Wait for User push-button is pressed */
     while (STM_EVAL_PBGetState(BUTTON_USER) != Bit_RESET) {
@@ -394,9 +394,9 @@ void wait_user_btn(char *s)
 
     /* clear ouput buffer with space */
     while (len --){
-        cogui_printf(" ");
+        gui_printf(" ");
     }
-    cogui_printf(" \r");
+    gui_printf(" \r");
 }
 
 /**
@@ -409,22 +409,22 @@ void wait_user_btn(char *s)
  *******************************************************************************
  */
 void print_result(StatusType r, char *str) {
-    cogui_printf("[User] %s => ", str);
+    gui_printf("[User] %s => ", str);
 	switch (r) {
 		case GUI_E_ERROR:
-			cogui_printf(RED_BOLD"GUI_E_ERROR\r\n"ARESET);
+			gui_printf(RED_BOLD"GUI_E_ERROR\r\n"ARESET);
 			break;
 		
 		case GUI_E_OK:
-			cogui_printf(GRN_BOLD"GUI_E_OK\r\n"ARESET);
+			gui_printf(GRN_BOLD"GUI_E_OK\r\n"ARESET);
 			break;
         
         case GUI_E_APP_NULL:
-			cogui_printf(RED_BOLD"GUI_E_APP_NULL\r\n"ARESET);
+			gui_printf(RED_BOLD"GUI_E_APP_NULL\r\n"ARESET);
 			break;
 
         default:
-            cogui_printf(MAN_BOLD"None\r\n"ARESET);
+            gui_printf(MAN_BOLD"None\r\n"ARESET);
             break;
 	}	
 }
@@ -445,26 +445,26 @@ void print_task_list(void)
     
 	ptcb = &TCBTbl[0];
 	for ( i = 0; i < (CFG_MAX_USER_TASKS+SYS_TASK_NUM-1); i++ ) {
-		cogui_printf("Task %2d: state =>", ptcb->taskID);
+		gui_printf("Task %2d: state =>", ptcb->taskID);
 		switch (ptcb->state) {
 			case TASK_READY:
-				cogui_printf(GRN_BOLD" TASK_READY  "ARESET);
+				gui_printf(GRN_BOLD" TASK_READY  "ARESET);
 				break;
 		
 			case TASK_RUNNING:
-				cogui_printf(BLU_BOLD" TASK_RUNNING"ARESET);
+				gui_printf(BLU_BOLD" TASK_RUNNING"ARESET);
 				break;
 			
 			case TASK_WAITING:
-				cogui_printf(YEL_BOLD" TASK_WAITING"ARESET);
+				gui_printf(YEL_BOLD" TASK_WAITING"ARESET);
 				break;
 			
 			case TASK_DORMANT:
-				cogui_printf(RED_BOLD" TASK_DORMANT"ARESET);
+				gui_printf(RED_BOLD" TASK_DORMANT"ARESET);
 				break;
 		}
 		
-		cogui_printf(", priority => %d (0x%p)\r\n", ptcb->prio, ptcb);
+		gui_printf(", priority => %d (0x%p)\r\n", ptcb->prio, ptcb);
 		ptcb++;
 	}
 }

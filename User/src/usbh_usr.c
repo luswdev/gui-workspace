@@ -30,10 +30,10 @@
 #include "stm32f429i_discovery_lcd.h"
 #include "user_config.h"
 #include "usbh_core.h"
+#include "main.h"
 #include "usbh_usr.h"
 #include "usbh_hid_mouse.h"
 #include "usbh_hid_keybd.h"
-#include "main.h"
 
 
 /* Private typedef -----------------------------------------------------------*/
@@ -111,7 +111,7 @@ void USBH_USR_Init(void)
   */
 void USBH_USR_DeviceAttached(void)
 {
-    cogui_printf("[Usb Host] %s.\r\n", MSG_DEV_ATTACHED);
+    gui_printf("[Usb Host] %s.\r\n", MSG_DEV_ATTACHED);
     STM_EVAL_LEDOn(LED4);
 
     USB_Host_status = USB_HOST_ATTACH;
@@ -125,7 +125,7 @@ void USBH_USR_DeviceAttached(void)
   */
 void USBH_USR_UnrecoveredError (void)
 {
-    cogui_printf("[Usb Host] %s.\r\n", MSG_UNREC_ERROR);
+    gui_printf("[Usb Host] %s.\r\n", MSG_UNREC_ERROR);
 }
 
 
@@ -137,7 +137,7 @@ void USBH_USR_UnrecoveredError (void)
   */
 void USBH_USR_DeviceDisconnected (void)
 {
-    cogui_printf("[Usb Host] %s.\r\n", MSG_DEV_DISCONNECTED);
+    gui_printf("[Usb Host] %s.\r\n", MSG_DEV_DISCONNECTED);
 
     STM_EVAL_LEDOff(LED4);
 
@@ -161,16 +161,16 @@ void USBH_USR_ResetDevice(void)
 void USBH_USR_DeviceSpeedDetected(uint8_t DeviceSpeed)
 {
     if (DeviceSpeed == HPRT0_PRTSPD_HIGH_SPEED) {
-        cogui_printf("[Usb Host] %s.\r\n", MSG_DEV_HIGHSPEED);
+        gui_printf("[Usb Host] %s.\r\n", MSG_DEV_HIGHSPEED);
 	} 
     else if (DeviceSpeed == HPRT0_PRTSPD_FULL_SPEED) {
-        cogui_printf("[Usb Host] %s.\r\n", MSG_DEV_FULLSPEED);
+        gui_printf("[Usb Host] %s.\r\n", MSG_DEV_FULLSPEED);
 	} 
     else if (DeviceSpeed == HPRT0_PRTSPD_LOW_SPEED) {
-        cogui_printf("[Usb Host] %s.\r\n", MSG_DEV_LOWSPEED);
+        gui_printf("[Usb Host] %s.\r\n", MSG_DEV_LOWSPEED);
 	} 
     else {
-		cogui_printf("[Usb Host] %s.\r\n", MSG_DEV_ERROR);
+		gui_printf("[Usb Host] %s.\r\n", MSG_DEV_ERROR);
 	}
 }
 
@@ -184,8 +184,8 @@ void USBH_USR_Device_DescAvailable(void *DeviceDesc)
     USBH_DevDesc_TypeDef *hs;
     hs = DeviceDesc;  
     
-    cogui_printf("[Usb Host] VID : %d\r\n" , (uint32_t)(*hs).idVendor);
-    cogui_printf("[Usb Host] PID : %d\r\n" , (uint32_t)(*hs).idProduct); 
+    gui_printf("[Usb Host] VID : %d\r\n" , (uint32_t)(*hs).idVendor);
+    gui_printf("[Usb Host] PID : %d\r\n" , (uint32_t)(*hs).idProduct); 
 }
 
 /**
@@ -211,10 +211,10 @@ void USBH_USR_Configuration_DescAvailable(USBH_CfgDesc_TypeDef * cfgDesc,
     id = itfDesc;  
     
     if ((*id).bInterfaceClass  == 0x08) {
-		cogui_printf("[Usb Host] %s.\r\n", MSG_MSC_CLASS);
+		gui_printf("[Usb Host] %s.\r\n", MSG_MSC_CLASS);
     } 
     else if ((*id).bInterfaceClass  == 0x03) {
-        cogui_printf("[Usb Host] %s.\r\n", MSG_HID_CLASS);
+        gui_printf("[Usb Host] %s.\r\n", MSG_HID_CLASS);
     }   
 }
 
@@ -225,7 +225,7 @@ void USBH_USR_Configuration_DescAvailable(USBH_CfgDesc_TypeDef * cfgDesc,
   */
 void USBH_USR_Manufacturer_String(void *ManufacturerString)
 {
-    cogui_printf("[Usb Host] Manufacturer : %s\r\n", (char *)ManufacturerString);
+    gui_printf("[Usb Host] Manufacturer : %s\r\n", (char *)ManufacturerString);
 }
 
 /**
@@ -235,7 +235,7 @@ void USBH_USR_Manufacturer_String(void *ManufacturerString)
   */
 void USBH_USR_Product_String(void *ProductString)
 {
-    cogui_printf("[Usb Host] Product : %s\r\n", (char *)ProductString);  
+    gui_printf("[Usb Host] Product : %s\r\n", (char *)ProductString);  
 }
 
 /**
@@ -245,7 +245,7 @@ void USBH_USR_Product_String(void *ProductString)
   */
 void USBH_USR_SerialNum_String(void *SerialNumString)
 {
-    cogui_printf("[Usb Host] Serial Number : %s\r\n", (char *)SerialNumString);    
+    gui_printf("[Usb Host] Serial Number : %s\r\n", (char *)SerialNumString);    
 }
 
 /**
@@ -255,7 +255,7 @@ void USBH_USR_SerialNum_String(void *SerialNumString)
   */
 void USBH_USR_EnumerationDone(void)
 {
-    cogui_printf("[Usb Host] %s.\r\n", MSG_DEV_ENUMERATED);
+    gui_printf("[Usb Host] %s.\r\n", MSG_DEV_ENUMERATED);
 }
 
 /**
@@ -265,7 +265,7 @@ void USBH_USR_EnumerationDone(void)
   */
 void USBH_USR_DeviceNotSupported(void)
 {
-    cogui_printf("[Usb Host] Device not supported.\r\n");
+    gui_printf("[Usb Host] Device not supported.\r\n");
 }
 
 /**
@@ -285,7 +285,7 @@ USBH_USR_Status USBH_USR_UserInput(void)
   */
 void USBH_USR_OverCurrentDetected (void)
 {
-    cogui_printf("[Usb Host] Overcurrent detected.\r\n");
+    gui_printf("[Usb Host] Overcurrent detected.\r\n");
 }
 
 /**
@@ -299,10 +299,36 @@ void USBH_USR_DeInit(void)
 
 void  USR_KEYBRD_Init (void) 
 {
+    gui_printf("[Usb Host] Connect to a keyboard\r\n");
+    gui_printf(WHITE_BG" \b"ARESET);
 }
+
+uint8_t last_key = 0;
 
 void  USR_KEYBRD_ProcessData (uint8_t pbuf)
 {
+#ifndef USE_COOS
+    if (pbuf == '\n') {
+        gui_printf(" \r%c", pbuf);
+    } else if (pbuf == '\r'){
+        gui_printf(" \b\b \b");
+    } else if (pbuf == '\t'){
+        gui_printf(" \t");
+    } else {
+        gui_printf("%c", pbuf);
+    }
+    gui_printf(WHITE_BG" \b"ARESET);
+#else
+    event_t kbd_event;
+    EVENT_INIT(&kbd_event, EVENT_KBD);
+
+    kbd_event.ascii_code = pbuf;
+    kbd_event.kbd_type = KBD_KEYDOWN;
+    
+    gui_send(gui_get_server(), &kbd_event);
+
+    last_key = pbuf;
+#endif
 }
 
 int16_t mouse_event[3] = {0, 0, 0};
@@ -352,28 +378,28 @@ void update_cursor(int16_t dx, int16_t dy, uint8_t btn)
     LCD_SetTextColor(black);
     LCD_DrawFullRect(cursor[0], cursor[1], 10, 10);     /* draw cursor                                          */
 #else
-    struct cogui_event event;
+    event_t event;
 
     if (cursor[2] != btn) {
-        COGUI_EVENT_INIT(&event, COGUI_EVENT_MOUSE_BUTTON);
+        EVENT_INIT(&event, EVENT_MOUSE_BUTTON);
         if (cursor[2] > btn) {
-            event.button = COGUI_MOUSE_BUTTON_UP;
+            event.button = MOUSE_BUTTON_UP;
             event.button |= cursor[2] - btn;
         }
         else {
-            event.button = COGUI_MOUSE_BUTTON_DOWN;
+            event.button = MOUSE_BUTTON_DOWN;
             event.button |= btn - cursor[2];
         }
     }
     else {
-        COGUI_EVENT_INIT(&event, COGUI_EVENT_MOUSE_MOTION);
-        event.button = COGUI_MOUSE_BUTTON_NONE;
+        EVENT_INIT(&event, EVENT_MOUSE_MOTION);
+        event.button = MOUSE_BUTTON_NONE;
     }
 
     event.dx = dx;
     event.dy = dy;
-
-    cogui_send(cogui_get_server(), &event);
+ 
+    gui_send(gui_get_server(), &event);
 
     cursor[0] = dx;                                     /* save this event data                                 */
     cursor[1] = dy;
@@ -385,7 +411,7 @@ void update_cursor(int16_t dx, int16_t dy, uint8_t btn)
 
 void  USR_MOUSE_Init (void)
 {
-    cogui_printf("[Usb Host] Connect to a mouse.\r\n");
+    gui_printf("[Usb Host] Connect to a mouse.\r\n");
 
     cursor[0] = 115;
     cursor[1] = 155;

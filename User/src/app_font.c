@@ -3,25 +3,25 @@
 
 void app_font(void *par)
 {
-	cogui_app_t *app = cogui_app_create("Fonts");
+	app_t *app = gui_app_create("Fonts");
 	if (app == Co_NULL) {
 		return;
 	}
 	
 	app->optional_handler = app_font_handler; 
-	cogui_app_run(app);
-	cogui_app_delete(app);
+	gui_app_run(app);
+	gui_app_delete(app);
 	
 	CoExitTask();
 }
 
-StatusType app_font_handler(struct cogui_event *event)
+StatusType app_font_handler(event_t *event)
 {
-	COGUI_ASSERT(event != Co_NULL);
+	ASSERT(event != Co_NULL);
 
 	switch (event->type)
     {
-	case COGUI_EVENT_PAINT:
+	case EVENT_PAINT:
 		 app_font_paint();
 		break;
 				
@@ -35,63 +35,63 @@ StatusType app_font_handler(struct cogui_event *event)
 
 void app_font_paint(void)
 {
-	cogui_window_t *win = cogui_window_create_with_title();
+	window_t *win = gui_window_create_with_title();
 	
-	cogui_window_show(win);
+	gui_window_show(win);
 
     /* widget 1: top-left */
-    cogui_widget_t *font_ex = cogui_widget_create(win);
-	cogui_widget_set_rectangle(font_ex, 5, 45, 230, 50);
+    widget_t *font_ex = gui_widget_create(win);
+	gui_widget_set_rectangle(font_ex, 5, 45, 230, 50);
 	font_ex->gc.background = blue;
-	font_ex->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
-    font_ex->gc.padding = COGUI_PADDING_SIMPLE(5);
-    cogui_widget_set_text_align(font_ex, COGUI_TEXT_ALIGN_LEFT|COGUI_TEXT_ALIGN_TOP);
-    cogui_widget_set_text(font_ex, "Text align left-top");
-	print_result(cogui_widget_show(font_ex), "create left-top example");
+	font_ex->flag |= GUI_WIDGET_FLAG_RECT | GUI_WIDGET_FLAG_FILLED;
+    font_ex->gc.padding = GUI_PADDING_SIMPLE(5);
+    gui_widget_set_text_align(font_ex, GUI_TEXT_ALIGN_LEFT|GUI_TEXT_ALIGN_TOP);
+    gui_widget_set_text(font_ex, "Text align left-top");
+	print_result(gui_widget_show(font_ex), "create left-top example");
 
     /* widget 2: middle-center */
-    font_ex = cogui_widget_create(win);
-	cogui_widget_set_rectangle(font_ex, 5, 100, 230, 50);
+    font_ex = gui_widget_create(win);
+	gui_widget_set_rectangle(font_ex, 5, 100, 230, 50);
 	font_ex->gc.background = red;
-	font_ex->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
-    font_ex->gc.padding = COGUI_PADDING_SIMPLE(5);
-    cogui_widget_set_text_align(font_ex, COGUI_TEXT_ALIGN_CENTER|COGUI_TEXT_ALIGN_MIDDLE);
-    cogui_widget_set_text(font_ex, "Text align middle-center");
-	print_result(cogui_widget_show(font_ex), "create middle-center example");
+	font_ex->flag |= GUI_WIDGET_FLAG_RECT | GUI_WIDGET_FLAG_FILLED;
+    font_ex->gc.padding = GUI_PADDING_SIMPLE(5);
+    gui_widget_set_text_align(font_ex, GUI_TEXT_ALIGN_CENTER|GUI_TEXT_ALIGN_MIDDLE);
+    gui_widget_set_text(font_ex, "Text align middle-center");
+	print_result(gui_widget_show(font_ex), "create middle-center example");
 
     /* widget 3: bottom-right */
-    font_ex = cogui_widget_create(win);
-	cogui_widget_set_rectangle(font_ex, 5, 155, 230, 50);
+    font_ex = gui_widget_create(win);
+	gui_widget_set_rectangle(font_ex, 5, 155, 230, 50);
 	font_ex->gc.background = green;
 	font_ex->gc.foreground = dark_grey;
-	font_ex->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
-    font_ex->gc.padding = COGUI_PADDING_SIMPLE(5);
-    cogui_widget_set_text_align(font_ex, COGUI_TEXT_ALIGN_BOTTOM|COGUI_TEXT_ALIGN_RIGHT);
-    cogui_widget_set_text(font_ex, "Text align bottom-right");
-	print_result(cogui_widget_show(font_ex), "create bottom-right example");
+	font_ex->flag |= GUI_WIDGET_FLAG_RECT | GUI_WIDGET_FLAG_FILLED;
+    font_ex->gc.padding = GUI_PADDING_SIMPLE(5);
+    gui_widget_set_text_align(font_ex, GUI_TEXT_ALIGN_BOTTOM|GUI_TEXT_ALIGN_RIGHT);
+    gui_widget_set_text(font_ex, "Text align bottom-right");
+	print_result(gui_widget_show(font_ex), "create bottom-right example");
 
     /* widget 4: font size 11x18 */
-    font_ex = cogui_widget_create(win);
-	cogui_widget_set_rectangle(font_ex, 5, 210, 230, 50);
+    font_ex = gui_widget_create(win);
+	gui_widget_set_rectangle(font_ex, 5, 210, 230, 50);
 	font_ex->gc.background = yellow;
 	font_ex->gc.foreground = dark_grey;
-	font_ex->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
-    font_ex->gc.padding = COGUI_PADDING_SIMPLE(15);
-    cogui_widget_set_font(font_ex, &tm_font_11x18);
-    cogui_widget_set_text_align(font_ex, COGUI_TEXT_ALIGN_CENTER|COGUI_TEXT_ALIGN_MIDDLE);
-    cogui_widget_set_text(font_ex, "11x18");
-	print_result(cogui_widget_show(font_ex), "create 11x18 example");
+	font_ex->flag |= GUI_WIDGET_FLAG_RECT | GUI_WIDGET_FLAG_FILLED;
+    font_ex->gc.padding = GUI_PADDING_SIMPLE(15);
+    gui_widget_set_font(font_ex, &tm_font_11x18);
+    gui_widget_set_text_align(font_ex, GUI_TEXT_ALIGN_CENTER|GUI_TEXT_ALIGN_MIDDLE);
+    gui_widget_set_text(font_ex, "11x18");
+	print_result(gui_widget_show(font_ex), "create 11x18 example");
 
     /* widget 5: font size 16x26 */
-    font_ex = cogui_widget_create(win);
-	cogui_widget_set_rectangle(font_ex, 5, 265, 230, 50);
+    font_ex = gui_widget_create(win);
+	gui_widget_set_rectangle(font_ex, 5, 265, 230, 50);
 	font_ex->gc.background = purple;
-	font_ex->flag |= COGUI_WIDGET_FLAG_RECT | COGUI_WIDGET_FLAG_FILLED;
-    font_ex->gc.padding = COGUI_PADDING_SIMPLE(10);
-    cogui_widget_set_font(font_ex, &tm_font_16x26);
-    cogui_widget_set_text_align(font_ex, COGUI_TEXT_ALIGN_CENTER|COGUI_TEXT_ALIGN_MIDDLE);
-    cogui_widget_set_text(font_ex, "16x26");
-	print_result(cogui_widget_show(font_ex), "create 16x26 example");
+	font_ex->flag |= GUI_WIDGET_FLAG_RECT | GUI_WIDGET_FLAG_FILLED;
+    font_ex->gc.padding = GUI_PADDING_SIMPLE(10);
+    gui_widget_set_font(font_ex, &tm_font_16x26);
+    gui_widget_set_text_align(font_ex, GUI_TEXT_ALIGN_CENTER|GUI_TEXT_ALIGN_MIDDLE);
+    gui_widget_set_text(font_ex, "16x26");
+	print_result(gui_widget_show(font_ex), "create 16x26 example");
 
-	cogui_printf("[%s] Paint ok.\r\n", cogui_app_self()->name);
+	gui_printf("[%s] Paint ok.\r\n", gui_app_self()->name);
 }

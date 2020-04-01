@@ -15,6 +15,7 @@
 #define BLU_BOLD "\x1b[;34;1m"
 #define MAN_BOLD "\x1b[;35;1m"
 #define GRN_BOLD "\x1b[;32;1m"
+#define WHITE_BG "\x1b[;47;1m"
 #define CYAN_BOLD_ITALIC "\x1b[;36;1;3m"
 #define ARESET "\x1b[0;m"
 

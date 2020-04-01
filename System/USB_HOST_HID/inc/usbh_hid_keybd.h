@@ -64,6 +64,7 @@
   * @{
   */ 
 /* Default keyboard configuration is AZERTY */
+#define QWERTY_KEYBOARD
 #if !defined(QWERTY_KEYBOARD) && !defined(AZERTY_KEYBOARD)
 #define AZERTY_KEYBOARD
 #endif
@@ -78,6 +79,11 @@
 #define  KBD_RIGHT_GUI                                  0x80
 
 #define  KBR_MAX_NBR_PRESSED                            6
+
+#define KBD_IS_SHIFT(k)     ((k) & (KBD_LEFT_SHIFT | KBD_RIGHT_SHIFT))
+#define KBD_IS_CTRL(k)      ((k) & (KBD_LEFT_CTRL | KBD_RIGHT_CTRL))
+#define KBD_IS_ALT(k)       ((k) & (KBD_LEFT_ALT | KBD_RIGHT_ALT))
+#define KBD_IS_GUI(k)       ((k) & (KBD_LEFT_GUI | KBD_RIGHT_GUI))
 
 /**
   * @}

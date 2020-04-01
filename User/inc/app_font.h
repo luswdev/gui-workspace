@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 void app_font(void *par);
-StatusType app_font_handler(struct cogui_event *event);
+StatusType app_font_handler(struct event *event);
 void app_font_paint(void);
 
 #ifdef __cplusplus

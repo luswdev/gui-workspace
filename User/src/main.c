@@ -37,7 +37,7 @@ struct graphic_driver_ops ops = {
     LCD_DrawVLine
 };
 
-cogui_graphic_driver_t driver_ops = {
+graphic_driver_t driver_ops = {
     GRAPHIC_PIXEL_FORMAT_RGB565,
     240,
     320,
@@ -62,25 +62,25 @@ void gui_init(void *par)
 	stm_print_string(GRN_BOLD"[OK]"ARESET"\r\n");
     	
 #ifdef USE_GUI
-	cogui_printf("[User] Set up grahpic driver...");
-	cogui_set_graphic_driver(&driver_ops);
-	cogui_printf(GRN_BOLD"[OK]\r\n"ARESET);
+	gui_printf("[User] Set up grahpic driver...");
+	gui_set_graphic_driver(&driver_ops);
+	gui_printf(GRN_BOLD"[OK]\r\n"ARESET);
 	
-	cogui_system_init();
+	gui_system_init();
 	
-	cogui_printf("[User] Create a task \"app_wgt\"...");
+	gui_printf("[User] Create a task \"app_wgt\"...");
 	CoCreateTask(app_wgt, (void *)0, 25, &app_wgt_stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
-	cogui_printf(GRN_BOLD"[OK]\r\n"ARESET);
+	gui_printf(GRN_BOLD"[OK]\r\n"ARESET);
 	
 	
-	cogui_printf("[User] Create a task \"app_font\"...");
+	gui_printf("[User] Create a task \"app_font\"...");
 	CoCreateTask(app_font, (void *)0, 30, &app_font_stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
-	cogui_printf(GRN_BOLD"[OK]\r\n"ARESET);
+	gui_printf(GRN_BOLD"[OK]\r\n"ARESET);
 
 #ifdef USE_USB
-    cogui_printf("[User] Create a task \"USB\"...");
+    gui_printf("[User] Create a task \"USB\"...");
 	CoCreateTask(usb_p, (void *)0, 35, &usb_stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
-	cogui_printf(GRN_BOLD"[OK]\r\n"ARESET);
+	gui_printf(GRN_BOLD"[OK]\r\n"ARESET);
 #endif
 
 	CoExitTask();
@@ -209,7 +209,7 @@ void assert_failed(uint8_t* file, uint32_t line)
     /* Infinite loop */
     while (1)
     {
-        cogui_printf("[System] Wrong parameters value: file %s on line %d\r\n", file, line);
+        gui_printf("[System] Wrong parameters value: file %s on line %d\r\n", file, line);
     }
 }
 #endif

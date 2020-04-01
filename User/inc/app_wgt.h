@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 void app_wgt(void *par);
-StatusType app_wgt_handler(struct cogui_event *event);
+StatusType app_wgt_handler(struct event *event);
 void app_wgt_paint(void);
 
 #ifdef __cplusplus

@@ -3,7 +3,10 @@ INCFLAG =\
 -Iinc \
 -I../CMSIS/inc \
 -I../STM32/inc \
--I../STM32F429/inc
+-I../STM32F429/inc \
+-I../../GUI/inc \
+-I../../CoOS/inc \
+-I../../User/inc
 
 CFLAGS += $(INCFLAG)
 
