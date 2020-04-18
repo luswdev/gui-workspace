@@ -5,7 +5,7 @@ bool_t wgt_toggle = Co_FALSE;
 uint8_t move_pos = 1;
 uint8_t colors = 1;
 uint16_t pos[8] = {80, 133, 5, 173, 80, 223, 155, 173};
-widget_t *event_wgt = Co_NULL;
+static widget_t *event_wgt = Co_NULL;
 
 void app_wgt(void *par) 
 {    

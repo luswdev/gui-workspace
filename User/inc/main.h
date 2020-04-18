@@ -10,7 +10,7 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__
 
-#define TASK_STK_SIZE			512
+#define TASK_STK_SIZE			256
 
 #define USE_FULL_ASSERT
 

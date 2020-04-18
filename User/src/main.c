@@ -17,6 +17,7 @@
 #include "main.h"
 #include "app_wgt.h"
 #include "app_font.h"
+#include "app_kbd.h"
 
 #ifdef USE_COOS
 OS_STK init_stk[TASK_STK_SIZE];
@@ -25,6 +26,7 @@ OS_STK gui_init_stk[TASK_STK_SIZE];
 #ifdef USE_GUI
 OS_STK app_wgt_stk[TASK_STK_SIZE];
 OS_STK app_font_stk[TASK_STK_SIZE];
+OS_STK app_kbd_stk[TASK_STK_SIZE];
 
 #ifdef USE_USB
 OS_STK usb_stk[TASK_STK_SIZE];
@@ -72,14 +74,18 @@ void gui_init(void *par)
 	CoCreateTask(app_wgt, (void *)0, 25, &app_wgt_stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
 	gui_printf(GRN_BOLD"[OK]\r\n"ARESET);
 	
-	
-	gui_printf("[User] Create a task \"app_font\"...");
-	CoCreateTask(app_font, (void *)0, 30, &app_font_stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
+    
+	/*gui_printf("[User] Create a task \"app_font\"...");
+	CoCreateTask(app_font, (void *)0, 25, &app_font_stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
+	gui_printf(GRN_BOLD"[OK]\r\n"ARESET);*/
+
+    gui_printf("[User] Create a task \"app_kbd\"...");
+	CoCreateTask(app_kbd, (void *)0, 25, &app_kbd_stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
 	gui_printf(GRN_BOLD"[OK]\r\n"ARESET);
 
 #ifdef USE_USB
     gui_printf("[User] Create a task \"USB\"...");
-	CoCreateTask(usb_p, (void *)0, 35, &usb_stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
+	CoCreateTask(usb_p, (void *)0, 30, &usb_stk[TASK_STK_SIZE-1], TASK_STK_SIZE);
 	gui_printf(GRN_BOLD"[OK]\r\n"ARESET);
 #endif
 

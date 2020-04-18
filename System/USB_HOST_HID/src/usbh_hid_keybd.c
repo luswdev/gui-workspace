@@ -30,6 +30,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "usbh_hid_keybd.h"
+#include "stm32f429i_discovery_lcd.h"
 #include "cogui.h"
 #include "main.h"
 
@@ -218,9 +219,9 @@ static const uint8_t HID_KEYBRD_Key_Gui[] = {
     KBD_KEY_LOWER_M,   KBD_KEY_LOWER_N,  KBD_KEY_LOWER_O,   KBD_KEY_LOWER_P,    KBD_KEY_LOWER_Q,    KBD_KEY_LOWER_R,      KBD_KEY_LOWER_S,   KBD_KEY_LOWER_T,
     KBD_KEY_LOWER_U,   KBD_KEY_LOWER_V,  KBD_KEY_LOWER_W,   KBD_KEY_LOWER_X,    KBD_KEY_LOWER_Y,    KBD_KEY_LOWER_Z,      KBD_KEY_1,         KBD_KEY_2,
     KBD_KEY_3,         KBD_KEY_4,        KBD_KEY_5,         KBD_KEY_6,          KBD_KEY_7,          KBD_KEY_8,            KBD_KEY_9,         KBD_KEY_0,
-    KBD_KEY_ENTER,     KBD_KEY_ESC,      KBD_KEY_BACKSPACE, KBD_KEY_TAB,        KBD_KEY_SPACE,      KBD_KEY_MINUS,        KBD_KEY_PLUS,      KBD_KEY_LCBARCKET,
-    KBD_KEY_RCBARCKET, KBD_KEY_UNKNOW,   KBD_KEY_BACKSLASH, KBD_KEY_SEMICOLON,  KBD_KEY_QUOTEDBL,   KBD_KEY_BACKQUOTE,    KBD_KEY_LESS,      KBD_KEY_GREATER,
-    KBD_KEY_QUESTION,  KBD_KEY_CAPSLOCK, KBD_KEY_F1,        KBD_KEY_F2,         KBD_KEY_F3,         KBD_KEY_F4,           KBD_KEY_F5,        KBD_KEY_F6,
+    KBD_KEY_ENTER,     KBD_KEY_ESC,      KBD_KEY_BACKSPACE, KBD_KEY_TAB,        KBD_KEY_SPACE,      KBD_KEY_MINUS,        KBD_KEY_PLUS,      KBD_KEY_LBRACKET,
+    KBD_KEY_RBRACKET,  KBD_KEY_UNKNOW,   KBD_KEY_BACKSLASH, KBD_KEY_SEMICOLON,  KBD_KEY_QUOTE,      KBD_KEY_BACKQUOTE,    KBD_KEY_COMMA,      KBD_KEY_PERIOD,
+    KBD_KEY_SLASH,     KBD_KEY_CAPSLOCK, KBD_KEY_F1,        KBD_KEY_F2,         KBD_KEY_F3,         KBD_KEY_F4,           KBD_KEY_F5,        KBD_KEY_F6,
     KBD_KEY_F7,        KBD_KEY_F8,       KBD_KEY_F9,        KBD_KEY_F10,        KBD_KEY_F11,        KBD_KEY_F12,          KBD_KEY_UNKNOW,    KBD_KEY_UNKNOW,
     KBD_KEY_UNKNOW,    KBD_KEY_UNKNOW,   KBD_KEY_HOME,      KBD_KEY_PAGEUP,     KBD_KEY_DEL,        KBD_KEY_END,          KBD_KEY_PAGEDOWN,  KBD_KEY_RIGHT,
     KBD_KEY_LEFT,      KBD_KEY_DOWN,     KBD_KEY_UP,        KBD_KEY_NUMLOCK,    KBD_KEY_NUM_DIVIDE, KBD_KEY_NUM_MULTIPLY, KBD_KEY_NUM_MINUS, KBD_KEY_NUM_PLUS,
@@ -238,8 +239,8 @@ static const uint8_t HID_KEYBRD_ShiftKey_Gui[] = {
     KBD_KEY_UPPER_M,   KBD_KEY_UPPER_N,  KBD_KEY_UPPER_O,   KBD_KEY_UPPER_P,    KBD_KEY_UPPER_Q,    KBD_KEY_UPPER_R,      KBD_KEY_UPPER_S,   KBD_KEY_UPPER_T,
     KBD_KEY_UPPER_U,   KBD_KEY_UPPER_V,  KBD_KEY_UPPER_W,   KBD_KEY_UPPER_X,    KBD_KEY_UPPER_Y,    KBD_KEY_UPPER_Z,      KBD_KEY_EXCLAIM,   KBD_KEY_AT,
     KBD_KEY_HASH,      KBD_KEY_DOLLAR,   KBD_KEY_PERCENT,   KBD_KEY_CARET,      KBD_KEY_AMPERSAND,  KBD_KEY_ASTERISK,     KBD_KEY_LPAREN,    KBD_KEY_RPAREN,
-    KBD_KEY_ENTER,     KBD_KEY_ESC,      KBD_KEY_BACKSPACE, KBD_KEY_TAB,        KBD_KEY_SPACE,      KBD_KEY_UNDERSCORE,   KBD_KEY_EQUAL,     KBD_KEY_LBRACKET,
-    KBD_KEY_RBRACKET,  KBD_KEY_UNKNOW,   KBD_KEY_PIPE,      KBD_KEY_COLON,      KBD_KEY_QUOTE,      KBD_KEY_TILDE,        KBD_KEY_COMMA,     KBD_KEY_PERIOD,
+    KBD_KEY_ENTER,     KBD_KEY_ESC,      KBD_KEY_BACKSPACE, KBD_KEY_TAB,        KBD_KEY_SPACE,      KBD_KEY_UNDERSCORE,   KBD_KEY_EQUAL,     KBD_KEY_LCBRACKET,
+    KBD_KEY_RCBRACKET, KBD_KEY_UNKNOW,   KBD_KEY_PIPE,      KBD_KEY_COLON,      KBD_KEY_QUOTEDBL,   KBD_KEY_TILDE,        KBD_KEY_LESS,      KBD_KEY_GREATER,
     KBD_KEY_SLASH,     KBD_KEY_CAPSLOCK, KBD_KEY_F1,        KBD_KEY_F2,         KBD_KEY_F3,         KBD_KEY_F4,           KBD_KEY_F5,        KBD_KEY_F6,
     KBD_KEY_F7,        KBD_KEY_F8,       KBD_KEY_F9,        KBD_KEY_F10,        KBD_KEY_F11,        KBD_KEY_F12,          KBD_KEY_UNKNOW,    KBD_KEY_UNKNOW,
     KBD_KEY_UNKNOW,    KBD_KEY_UNKNOW,   KBD_KEY_HOME,      KBD_KEY_PAGEUP,     KBD_KEY_DEL,        KBD_KEY_END,          KBD_KEY_PAGEDOWN,  KBD_KEY_RIGHT,
@@ -283,6 +284,9 @@ static uint8_t keys_last_gui;
 * @retval None
 */
 
+bool_t num_lock = Co_FALSE;
+bool_t caps_lock = Co_FALSE;
+
 static void KEYBRD_Decode(uint8_t *pbuf)
 {
 #ifndef USE_COOS
@@ -303,12 +307,6 @@ static void KEYBRD_Decode(uint8_t *pbuf)
   nbr_keys_new  = 0;
   nbr_keys_last = 0;
   key_newest    = 0x00;
-
-    gui_printf("[Usb Kbd] Keys: ");
-  for (ix=0; ix<KBR_MAX_NBR_PRESSED; ix++) {
-      gui_printf("%d ", pbuf[ix]);
-  }  
-  gui_printf("\r\n");
   
   /* Check if Shift key is pressed */                                                                         
   if ((pbuf[0] == KBD_LEFT_SHIFT) || (pbuf[0] == KBD_RIGHT_SHIFT)) {
@@ -414,13 +412,27 @@ static void KEYBRD_Decode(uint8_t *pbuf)
     
     /* if there has key(s) pressed */
     if (key_num != 0) {
-        /* we just process first key */
-        if (KBD_IS_SHIFT(pbuf[0])) {
+        if (pbuf[2] == 57) {
+            GUI_TOGGLE_BOOL(caps_lock);
+            STM_EVAL_LEDToggle(LED3);
+        } else if (pbuf[2] == 83) {
+            GUI_TOGGLE_BOOL(num_lock);
+            STM_EVAL_LEDToggle(LED4);
+        }/* we just process first key */
+        else if (KBD_HID_IS_SHIFT(pbuf[0])) {
             event.key = HID_KEYBRD_ShiftKey_Gui[pbuf[2]];
         } else {
             event.key = HID_KEYBRD_Key_Gui[pbuf[2]];
         }
         event.kbd_type = KBD_KEYDOWN;
+
+        if (caps_lock) {
+            event.mod |= KBD_MOD_CAPS;
+        }
+
+        if (num_lock) {
+            event.mod |= KBD_MOD_NUM;
+        }
     } else {
         event.key = keys_last_gui;
         event.kbd_type = KBD_KEYUP;

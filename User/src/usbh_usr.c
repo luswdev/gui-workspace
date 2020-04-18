@@ -112,7 +112,6 @@ void USBH_USR_Init(void)
 void USBH_USR_DeviceAttached(void)
 {
     gui_printf("[Usb Host] %s.\r\n", MSG_DEV_ATTACHED);
-    STM_EVAL_LEDOn(LED4);
 
     USB_Host_status = USB_HOST_ATTACH;
 }
@@ -138,8 +137,6 @@ void USBH_USR_UnrecoveredError (void)
 void USBH_USR_DeviceDisconnected (void)
 {
     gui_printf("[Usb Host] %s.\r\n", MSG_DEV_DISCONNECTED);
-
-    STM_EVAL_LEDOff(LED4);
 
     USB_Host_status = USB_HOST_DISCONNECT;
 }
